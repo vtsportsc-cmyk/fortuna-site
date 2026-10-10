@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Online — Fortuna Rodízio &amp; Buffet</title>
+    <meta name="description"
+        content="Faça seu pedido de delivery no Fortuna Rodízio & Buffet: marmitas na brasa, combos e bebidas em Seropédica - RJ.">
+
+    <link rel="icon" type="image/jpeg"
+        href="fortuna/img/logo/505139767_17844392202509749_550779393459654382_n.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pedido.css">
+</head>
+
+<body>
+
+    <header class="site-header scrolled" id="topo">
+        <div class="header-inner">
+            <a href="index.html" class="brand" aria-label="Fortuna Rodízio & Buffet — Página inicial">
+                <span class="brand-mark"><img src="fortuna/img/logo/505139767_17844392202509749_550779393459654382_n.jpg"
+                        alt="Logo Fortuna Rodízio &amp; Buffet"></span>
+                <span class="brand-text">
+                    <strong>Fortuna</strong>
+                    <em>Pedido Online</em>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="main-nav" aria-label="Navegação do pedido">
+                <a href="index.html">Início</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#bairros-entrega">Entrega</a>
+                <a href="#acompanhar">Acompanhar Pedido</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-gold btn-icon-sm cart-button" id="cart-button" aria-label="Abrir sacola">
+                    <i class="fa-solid fa-bag-shopping"></i><span>Sacola</span>
+                    <span class="cart-badge hidden" id="cart-badge">0</span>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="order-hero">
+            <div class="hero-glow"></div>
+            <div class="order-hero-inner">
+                <p class="hero-eyebrow"><i class="fa-solid fa-motorcycle"></i> Delivery Fortuna · Seropédica</p>
+                <h1 class="hero-title">
+                    Seu <span class="title-accent">churrasco na brasa</span> direto pra sua casa
+                </h1>
+                <p class="hero-subtitle">
+                    Monte o seu pedido em instantes. Enviamos para todo Seropédica com taxa por bairro
+                    ou você retira no balcão.
+                </p>
+                <div class="hero-highlights">
+                    <span class="highlight-chip">
+                        <i class="fa-regular fa-clock"></i>
+                        <strong id="dados-horarios">11h às 23h</strong> todos os dias
+                    </span>
+                    <span class="highlight-chip">
+                        <i class="fa-solid fa-bicycle"></i>
+                        <strong id="dados-tempo">15 a 45 min</strong> para entregar
+                    </span>
+                    <span class="highlight-chip highlight-rating">
+                        <i class="fa-solid fa-piggy-bank"></i>
+                        <strong id="dados-minimo">R$ 15,00</strong> pedido mínimo
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="cardapio">
+            <div class="menu-layout">
+
+                <nav class="cat-nav" id="cat-nav" aria-label="Categorias do cardápio"></nav>
+
+                <div class="menu-panel">
+                    <div id="menu-loading" class="menu-placeholder">
+                        <i class="fa-solid fa-utensils"></i>
+                        <p>Carregando o cardápio...</p>
+                    </div>
+                    <div id="menu-groups" class="menu-groups"></div>
+                </div>
+
+                <aside class="cart-panel" id="cart-panel" aria-live="polite"></aside>
+
+            </div>
+        </section>
+
+        <section class="section delivery-section" id="bairros-entrega">
+            <div class="section-head">
+                <p class="section-eyebrow"><i class="fa-solid fa-location-dot"></i> Áreas de Entrega</p>
+                <h2 class="section-title">Taxa por Bairro</h2>
+                <p class="section-sub">
+                    Selecione seu bairro no fechamento do pedido e a taxa calcula sozinha.
+                </p>
+            </div>
+            <div class="districts-grid" id="districts-grid"></div>
+        </section>
+
+        <section class="section track-section" id="acompanhar">
+            <div class="section-head">
+                <p class="section-eyebrow"><i class="fa-solid fa-magnifying-glass"></i> Status do Pedido</p>
+                <h2 class="section-title">Acompanhe pelo código</h2>
+            </div>
+            <div class="track-box">
+                <label class="track-label" for="track-code">Digite o código do seu pedido</label>
+                <div class="track-form">
+                    <input id="track-code" class="track-input" type="text" placeholder="Ex.: FOR-20261009-XXXX"
+                        maxlength="24" autocomplete="off">
+                    <button class="btn btn-gold" id="track-button" type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i> Acompanhar
+                    </button>
+                </div>
+                <div id="track-result" class="track-result"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a href="index.html" class="brand brand-footer">
+                <span class="brand-mark"><img src="fortuna/img/logo/505139767_17844392202509749_550779393459654382_n.jpg"
+                        alt="Logo Fortuna Rodízio &amp; Buffet"></span>
+                <span class="brand-text">
+                    <strong>Fortuna</strong>
+                    <em>Rodízio &amp; Buffet</em>
+                </span>
+            </a>
+
+            <p class="footer-contacts">
+                <a href="index.html" aria-label="Página principal do Fortuna">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <a href="https://www.instagram.com/fortuna_seropedica/" target="_blank" rel="noopener"
+                    aria-label="Instagram do Fortuna">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=5521986663972&text=Ol%C3%A1%2C+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+reserva"
+                    target="_blank" rel="noopener" aria-label="WhatsApp do Fortuna">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </p>
+
+            <p class="footer-legal">
+                Centro Comercial Seropédica · Av. Min. Fernando Costa, 1119 · Lj 108 — (21) 98666-3972
+                <br>© 2026 Fortuna Rodízio &amp; Buffet · Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <div class="cart-drawer-backdrop hidden" id="cart-backdrop"></div>
+    <div class="cart-drawer hidden" id="cart-drawer" aria-label="Sacola de compras"></div>
+
+    <div class="modal-backdrop hidden" id="modal-backdrop"></div>
+
+    <div class="modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+        <div class="modal-card">
+            <button class="modal-close" id="product-modal-close" aria-label="Fechar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="product-modal-body"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+        <div class="modal-card modal-card-large">
+            <button class="modal-close" id="checkout-close" aria-label="Fechar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="checkout-body"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="done-modal" role="dialog" aria-modal="true" aria-labelledby="done-title">
+        <div class="modal-card">
+            <button class="modal-close" id="done-close" aria-label="Fechar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="done-body"></div>
+        </div>
+    </div>
+
+    <div class="mobile-cart-bar hidden" id="mobile-cart-bar">
+        <button type="button" id="mobile-cart-open">
+            <span class="mobile-cart-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+            <span class="mobile-cart-text">
+                <strong id="mobile-cart-total">R$ 0,00</strong>
+                <small id="mobile-cart-count">0 itens</small>
+            </span>
+            <i class="fa-solid fa-arrow-right mobile-cart-arrow"></i>
+        </button>
+    </div>
+
+    <a class="floating-whatsapp"
+        href="https://api.whatsapp.com/send/?phone=5521986663972&text=Ol%C3%A1%2C+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+reserva"
+        target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/pedido.js"></script>
+</body>
+
+</html>

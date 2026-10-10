@@ -1,0 +1,14 @@
+{
+  "name": "fortuna-delivery",
+  "version": "1.0.0",
+  "description": "Site de pedidos online do Fortuna Rodízio & Buffet (Seropédica-RJ): loja, API e painel admin.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

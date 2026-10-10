@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel — Fortuna Rodízio &amp; Buffet</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" type="image/jpeg"
+        href="fortuna/img/logo/505139767_17844392202509749_550779393459654382_n.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body class="admin-body">
+
+    <header class="admin-header">
+        <div class="admin-header-inner">
+            <a href="index.html" class="brand">
+                <span class="brand-mark"><img src="fortuna/img/logo/505139767_17844392202509749_550779393459654382_n.jpg"
+                        alt="Logo Fortuna"></span>
+                <span class="brand-text">
+                    <strong>Fortuna</strong>
+                    <em>Painel de Pedidos</em>
+                </span>
+            </a>
+            <div class="admin-header-actions">
+                <a class="btn btn-ghost btn-sm" href="pedido.html" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-utensils"></i> Ver loja
+                </a>
+                <button class="btn btn-ghost btn-sm hidden" id="btn-sair" type="button">
+                    <i class="fa-solid fa-right-from-bracket"></i> Sair
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-main">
+
+        <section class="admin-login" id="login-view">
+            <div class="admin-login-card">
+                <div class="admin-lock"><i class="fa-solid fa-lock"></i></div>
+                <h1 class="admin-login-title">Acesso restrito</h1>
+                <p class="admin-login-sub">Digite a senha para gerenciar os pedidos do Fortuna.</p>
+                <div class="admin-login-form">
+                    <input type="password" id="login-senha" class="admin-input" placeholder="Senha" autocomplete="current-password">
+                    <button type="button" class="btn btn-gold btn-lg" id="login-btn">
+                        Entrar
+                    </button>
+                </div>
+                <p class="admin-login-err hidden" id="login-err"><i class="fa-solid fa-triangle-exclamation"></i> Senha incorreta.</p>
+            </div>
+        </section>
+
+        <section class="admin-dash hidden" id="dash-view">
+            <div class="admin-dash-head">
+                <p class="section-eyebrow"><i class="fa-solid fa-mug-hot"></i> Operacional</p>
+                <h1 class="hero-title" style="font-size:clamp(1.6rem,3vw,2.4rem)">Pedidos <span class="title-accent">ao vivo</span></h1>
+                <p class="admin-refresh-note"><i class="fa-solid fa-rotate"></i> Atualizado em <strong id="admin-updated">—</strong></p>
+            </div>
+
+            <div class="stat-grid" id="stat-grid"></div>
+
+            <div class="admin-toolbar">
+                <div class="filter-tabs" id="filter-tabs"></div>
+                <button class="btn btn-ghost btn-sm" id="btn-refresh" type="button">
+                    <i class="fa-solid fa-rotate-right"></i> Atualizar
+                </button>
+            </div>
+
+            <div class="orders-list" id="orders-list"></div>
+        </section>
+
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

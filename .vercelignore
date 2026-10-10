@@ -1,0 +1,7 @@
+node_modules/
+.git/
+.vercel/
+data/fortuna.db
+data/fortuna.db-shm
+data/fortuna.db-wal
+data/restaurante.json

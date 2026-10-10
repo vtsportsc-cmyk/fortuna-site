@@ -1,0 +1,23 @@
+{
+  "obs": "Tabela de entrega do Fortuna. Edite os valores de 'taxa' livremente e o restaurante começa a calcular por bairro automaticamente.",
+  "bairros": [
+    { "nome": "Fazenda Caxias", "taxa": 10.0, "tempo": 25, "ativo": true },
+    { "nome": "Campo Lindo", "taxa": 10.0, "tempo": 25, "ativo": true },
+    { "nome": "Jardins", "taxa": 12.0, "tempo": 30, "ativo": true },
+    { "nome": "Parque Jacimar", "taxa": 12.0, "tempo": 30, "ativo": true },
+    { "nome": "Jardim Maracanã", "taxa": 12.0, "tempo": 30, "ativo": true },
+    { "nome": "Boa Esperança", "taxa": 12.0, "tempo": 30, "ativo": true },
+    { "nome": "Canto do Rio", "taxa": 12.0, "tempo": 30, "ativo": true },
+    { "nome": "Santa Alice", "taxa": 15.0, "tempo": 35, "ativo": true },
+    { "nome": "Santa Sofia", "taxa": 15.0, "tempo": 35, "ativo": true },
+    { "nome": "Cabral", "taxa": 15.0, "tempo": 35, "ativo": true },
+    { "nome": "Ecologia", "taxa": 15.0, "tempo": 35, "ativo": true },
+    { "nome": "Carretão", "taxa": 15.0, "tempo": 35, "ativo": true },
+    { "nome": "Chaperó", "taxa": 15.0, "tempo": 35, "ativo": true },
+    { "nome": "UFRRJ", "taxa": 15.0, "tempo": 40, "ativo": true },
+    { "nome": "Nazaré", "taxa": 15.0, "tempo": 40, "ativo": true },
+    { "nome": "Incra", "taxa": 18.0, "tempo": 40, "ativo": true },
+    { "nome": "Piranema", "taxa": 18.0, "tempo": 40, "ativo": true },
+    { "nome": "Área Rural de Seropédica", "taxa": 20.0, "tempo": 45, "ativo": true }
+  ]
+}

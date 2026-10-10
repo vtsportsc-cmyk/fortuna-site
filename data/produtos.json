@@ -1,0 +1,218 @@
+{
+  "atualizado": "2026-10-09",
+  "categorias": [
+    {
+      "id": 1309826,
+      "nome": "Quentinhas",
+      "icone": "fa-box-open",
+      "descricao": "Marmitas prontas, montadas na hora.",
+      "produtos": [
+        {
+          "id": 40467490,
+          "nome": "QUENTINHA G (COM CHURRAS)",
+          "descricao": "",
+          "preco": 29.99,
+          "preco_original": null,
+          "imagem": "fortuna/img/quentinha de trio de churrasco.jpeg",
+          "opcoes": null,
+          "disponivel": true
+        },
+        {
+          "id": 40467484,
+          "nome": "QUENTINHA P (COM CHURRAS)",
+          "descricao": "",
+          "preco": 15,
+          "preco_original": null,
+          "imagem": "fortuna/img/quentinha de churrasco pequena.png",
+          "opcoes": null,
+          "disponivel": true
+        },
+        {
+          "id": 40467433,
+          "nome": "QUENTINHA P (SEM CHURRASCO)",
+          "descricao": "",
+          "preco": 14.99,
+          "preco_original": null,
+          "imagem": "fortuna/img/marmita de sobre coxa na brasa.png",
+          "opcoes": null,
+          "disponivel": true
+        }
+      ]
+    },
+    {
+      "id": 1315382,
+      "nome": "Mais Vendidos",
+      "icone": "fa-fire-flame-curved",
+      "descricao": "Os campeões de pedidos do Fortuna.",
+      "produtos": [
+        {
+          "id": 40626768,
+          "nome": "Quentinha de churrasco pequena",
+          "descricao": "Marmita PEQUENA acompanha arroz, feijão e farofa. e proteina a sua escolha",
+          "preco": 17.99,
+          "preco_original": 29.99,
+          "imagem": "fortuna/img/quentinha de churrasco pequena.png",
+          "opcoes": [
+            {
+              "nome": "Frango na brasa",
+              "adicional": 0
+            },
+            {
+              "nome": "Frango e linguiça toscana",
+              "adicional": 1.99
+            },
+            {
+              "nome": "Churrasco misto",
+              "adicional": 3.47
+            }
+          ],
+          "disponivel": true
+        },
+        {
+          "id": 40627093,
+          "nome": "Marmita  de sobrecoxa na brasa",
+          "descricao": "Marmita de churrasco com arroz soltinho, frango na brasa feito na churrasqueira e farofa caseira do cheff... Uma delicia peça o seu agora mesmo!",
+          "preco": 21.99,
+          "preco_original": null,
+          "imagem": "fortuna/img/marmita de sobre coxa na brasa.png",
+          "opcoes": null,
+          "disponivel": true
+        },
+        {
+          "id": 40626797,
+          "nome": "Quentinha de trio de churrasco",
+          "descricao": "Marmita de churrasco misto com linguiça toscana, file de sobrecoxa e pernil na brasa. Acompanha arroz, feijão bem temperado, farofa caseira",
+          "preco": 22.99,
+          "preco_original": null,
+          "imagem": "fortuna/img/quentinha de trio de churrasco.jpeg",
+          "opcoes": null,
+          "disponivel": true
+        },
+        {
+          "id": 40627024,
+          "nome": "2 quentinhas de churrasco P + guarana 600ml",
+          "descricao": "Marmita PQUENA  de churrasco misto com linguiça toscana, file de sobrecoxa e pernil na brasa. Acompanha arroz, feijão bem temperado, farofa caseira",
+          "preco": 39.99,
+          "preco_original": 49.99,
+          "imagem": "fortuna/img/2 quentinhas de churrasco P + guarana.jpeg",
+          "opcoes": null,
+          "disponivel": true
+        }
+      ]
+    },
+    {
+      "id": 1315842,
+      "nome": "Combos",
+      "icone": "fa-boxes-stacked",
+      "descricao": "Combinações para 1 ou 2 pessoas.",
+      "produtos": [
+        {
+          "id": 40627446,
+          "nome": "Quentinha de churrasco P + Coca 200ml",
+          "descricao": "Marmita PEQUENA de churrasco misto com linguiça toscana, file de sobrecoxa e pernil na brasa. Acompanha arroz, feijão bem temperado, farofa caseira",
+          "preco": 24.99,
+          "preco_original": 44.9,
+          "imagem": "https://static.saipos.com/saipos-estatico/img-items/63643/store_item/8b6cade5e6b23f024d01c1befc897f04.jpeg",
+          "opcoes": null,
+          "disponivel": true
+        },
+        {
+          "id": 40627543,
+          "nome": "Quentinha de trio de churrasco + Coca 200l",
+          "descricao": "Marmita de churrasco misto com linguiça toscana, file de sobrecoxa e pernil na brasa. Acompanha arroz, feijão bem temperado, farofa caseira",
+          "preco": 25.99,
+          "preco_original": null,
+          "imagem": "https://static.saipos.com/saipos-estatico/img-items/63643/store_item/185ce3b2ad5ab269b329769485bb7d47.jpeg",
+          "opcoes": null,
+          "disponivel": true
+        },
+        {
+          "id": 40627587,
+          "nome": "2 quentinhas de churrasco + guarana 600ml",
+          "descricao": "2 marmitas de churrasco misto com linguiça, pernil e frango na brasa. Acompanha arroz, feijão e farofa caseira + Guarana 600ml",
+          "preco": 39.99,
+          "preco_original": null,
+          "imagem": "https://static.saipos.com/saipos-estatico/img-items/63643/store_item/92fc7b6a4c33160168d99fe533224430.jpeg",
+          "opcoes": null,
+          "disponivel": true
+        },
+        {
+          "id": 40627568,
+          "nome": "2 quentinhas de frango na brasa + guaraná 600ml",
+          "descricao": "Marmita de churrasco com arroz soltinho, frango na brasa feito na churrasqueira e farofa caseira do cheff... Uma delicia peça o seu agora mesmo!",
+          "preco": 39.99,
+          "preco_original": null,
+          "imagem": "https://static.saipos.com/saipos-estatico/img-items/63643/store_item/e801831c01fc2996616700cf9b974dd8.jpeg",
+          "opcoes": null,
+          "disponivel": true
+        }
+      ]
+    },
+    {
+      "id": 1315850,
+      "nome": "Marmitas de Churrasco",
+      "icone": "fa-drumstick-bite",
+      "descricao": "Churrasco na brasa com acompanhamentos.",
+      "produtos": [
+        {
+          "id": 40627777,
+          "nome": "1 quentinha frango na brasa + linguiça",
+          "descricao": "Marmita de churrasco com arroz soltinho, feijão, farofa. Frango na brasa e linguiça toscana.  Um classico bem delicioso.",
+          "preco": 21.97,
+          "preco_original": null,
+          "imagem": "https://static.saipos.com/saipos-estatico/img-items/63643/store_item/64bb8aeadf89c17866483b467024a9a8.jpeg",
+          "opcoes": null,
+          "disponivel": true
+        },
+        {
+          "id": 40627723,
+          "nome": "1 quentinha de trio de churrasco completa",
+          "descricao": "Marmita com arroz soltinho, feijão, batata frita, churrasco na brasa com frango, linguiça, pernil, farofa, e vinagrete fresquinho...",
+          "preco": 29.99,
+          "preco_original": null,
+          "imagem": "https://static.saipos.com/saipos-estatico/img-items/63643/store_item/0e20b15204ff95308a0d49ba54331899.jpeg",
+          "opcoes": null,
+          "disponivel": true
+        }
+      ]
+    },
+    {
+      "id": 1315849,
+      "nome": "Bebidas",
+      "icone": "fa-wine-bottle",
+      "descricao": "Sempre geladas para acompanhar.",
+      "produtos": [
+        {
+          "id": 40627813,
+          "nome": "Coca Cola Lata",
+          "descricao": "",
+          "preco": 7.99,
+          "preco_original": null,
+          "imagem": "https://static.saipos.com/saipos-estatico/img-items/63643/store_item/1056ea2c485e956087403b03c1a65cfd.jpeg",
+          "opcoes": null,
+          "disponivel": true
+        },
+        {
+          "id": 40628883,
+          "nome": "Guarana Lata 350ml",
+          "descricao": "",
+          "preco": 7.99,
+          "preco_original": null,
+          "imagem": "https://static.saipos.com/saipos-estatico/img-items/63643/store_item/b74996a5ba9769ec8590d481b9cd99c1.jpeg",
+          "opcoes": null,
+          "disponivel": true
+        },
+        {
+          "id": 40627805,
+          "nome": "Coca Cola 1,5l",
+          "descricao": "",
+          "preco": 14.9,
+          "preco_original": null,
+          "imagem": "https://static.saipos.com/saipos-estatico/img-items/63643/store_item/e220045c73cd4dd4270f5a031a048831.png",
+          "opcoes": null,
+          "disponivel": true
+        }
+      ]
+    }
+  ]
+}
