@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       width: 550,
       height: 800,
       size: "stretch",
-      minWidth: 315,
+      minWidth: 280,
       maxWidth: 1000,
       minHeight: 420,
       maxHeight: 1350,
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       mobileScrollSupport: true,
       useMouseEvents: false,
       showPageCorners: false,
-      disableFlipByClick: true,
+      disableFlipByClick: false,
       flippingTime: 800
     });
 
@@ -263,6 +263,17 @@ document.addEventListener("DOMContentLoaded", async () => {
       } else {
         btnNext.classList.remove("hidden");
       }
+    });
+
+    const setButtonsBusy = (busy) => {
+      btnPrev.classList.toggle("is-busy", busy);
+      btnNext.classList.toggle("is-busy", busy);
+      btnPrev.disabled = busy;
+      btnNext.disabled = busy;
+    };
+
+    pageFlip.on("changeState", (e, state) => {
+      setButtonsBusy(state === "flipping");
     });
 
     btnPrev.addEventListener("click", () => pageFlip.flipPrev());
